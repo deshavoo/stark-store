@@ -65,7 +65,6 @@ function Navbar({ cartCount, onCartOpen, products = [], onProductSelect }) {
         className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#0B0F19]/75 backdrop-blur-xl"
       >
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
-          {/* Logo */}
           <a
             href="#home"
             onClick={closeMenu}
@@ -78,7 +77,6 @@ function Navbar({ cartCount, onCartOpen, products = [], onProductSelect }) {
             />
           </a>
 
-          {/* Desktop Navigation */}
           <div className="hidden items-center gap-8 md:flex">
             {navigationLinks.map((link, index) => (
               <a
@@ -93,9 +91,7 @@ function Navbar({ cartCount, onCartOpen, products = [], onProductSelect }) {
             ))}
           </div>
 
-          {/* Actions */}
           <div className="flex items-center gap-2">
-            {/* Search */}
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
@@ -105,7 +101,6 @@ function Navbar({ cartCount, onCartOpen, products = [], onProductSelect }) {
               <Search size={20} />
             </button>
 
-            {/* Cart */}
             <button
               type="button"
               onClick={onCartOpen}
@@ -132,7 +127,6 @@ function Navbar({ cartCount, onCartOpen, products = [], onProductSelect }) {
               </AnimatePresence>
             </button>
 
-            {/* Mobile Menu */}
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
@@ -145,11 +139,9 @@ function Navbar({ cartCount, onCartOpen, products = [], onProductSelect }) {
         </div>
       </nav>
 
-      {/* Search Overlay */}
       <AnimatePresence>
         {searchOpen && (
           <>
-            {/* Background */}
             <motion.button
               type="button"
               initial={{ opacity: 0 }}
@@ -160,7 +152,6 @@ function Navbar({ cartCount, onCartOpen, products = [], onProductSelect }) {
               aria-label="إغلاق البحث"
             />
 
-            {/* Search Panel */}
             <motion.div
               initial={{
                 opacity: 0,
@@ -181,7 +172,6 @@ function Navbar({ cartCount, onCartOpen, products = [], onProductSelect }) {
               className="fixed left-0 right-0 top-0 z-90 border-b border-white/10 bg-[#0B0F19]/95 shadow-2xl backdrop-blur-xl"
             >
               <div className="mx-auto max-w-4xl px-5 py-6 sm:px-8">
-                {/* Search Header */}
                 <div className="flex items-center gap-3">
                   <div className="relative flex-1">
                     <Search
@@ -220,7 +210,6 @@ function Navbar({ cartCount, onCartOpen, products = [], onProductSelect }) {
                   </button>
                 </div>
 
-                {/* Results */}
                 <div className="mt-5 max-h-[65vh] overflow-y-auto">
                   {!filteredProducts.length ? (
                     <div className="py-14 text-center">
@@ -295,7 +284,6 @@ function Navbar({ cartCount, onCartOpen, products = [], onProductSelect }) {
         )}
       </AnimatePresence>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
           <>

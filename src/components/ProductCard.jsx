@@ -39,7 +39,6 @@ function ProductCard({ product, onSelect }) {
           <ArrowUpLeft size={16} />
         </button>
 
-        {/* Bottom Product Type */}
         <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between sm:bottom-4 sm:left-4 sm:right-4">
           <span className="rounded-full border border-white/10 bg-black/40 px-2.5 py-1 text-[9px] font-medium text-white/80 backdrop-blur-md sm:px-3 sm:text-[10px]">
             {product.category}
@@ -47,13 +46,11 @@ function ProductCard({ product, onSelect }) {
         </div>
       </div>
 
-      {/* Product Info */}
       <div className="p-4 sm:p-5">
         <h3 className="truncate font-['Poppins'] text-sm font-semibold text-white sm:text-base">
           {product.name}
         </h3>
 
-        {/* Price */}
         <div className="mt-3 flex flex-wrap items-center gap-2">
           <span className="text-base font-bold text-white sm:text-lg">
             {product.price.toLocaleString()} EGP
@@ -64,12 +61,10 @@ function ProductCard({ product, onSelect }) {
           </span>
         </div>
 
-        {/* Discount */}
         <p className="mt-1.5 text-[10px] font-semibold text-[#F59E0B] sm:text-xs">
           خصم {product.discount}%
         </p>
 
-        {/* CTA */}
         <button
           type="button"
           onClick={(event) => {

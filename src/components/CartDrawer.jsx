@@ -45,7 +45,6 @@ function CartDrawer({ isOpen, onClose, cart, onUpdateQuantity, onRemove }) {
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Overlay */}
           <motion.button
             type="button"
             initial={{ opacity: 0 }}
@@ -56,7 +55,6 @@ function CartDrawer({ isOpen, onClose, cart, onUpdateQuantity, onRemove }) {
             aria-label="إغلاق السلة"
           />
 
-          {/* Drawer */}
           <motion.aside
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
@@ -68,7 +66,6 @@ function CartDrawer({ isOpen, onClose, cart, onUpdateQuantity, onRemove }) {
             dir="rtl"
             className="fixed right-0 top-0 z-100 flex h-full w-full max-w-md flex-col border-l border-white/10 bg-[#0B0F19] shadow-2xl"
           >
-            {/* Header */}
             <div className="flex items-center justify-between border-b border-white/10 px-5 py-5">
               <div>
                 <p
@@ -93,7 +90,6 @@ function CartDrawer({ isOpen, onClose, cart, onUpdateQuantity, onRemove }) {
               </button>
             </div>
 
-            {/* Items */}
             <div className="flex-1 overflow-y-auto px-5 py-5">
               {!cart.length ? (
                 <div className="flex h-full flex-col items-center justify-center text-center">
@@ -209,7 +205,6 @@ function CartDrawer({ isOpen, onClose, cart, onUpdateQuantity, onRemove }) {
               )}
             </div>
 
-            {/* Footer */}
             {cart.length > 0 && (
               <div className="border-t border-white/10 bg-[#0B0F19] p-5">
                 <div className="mb-4 rounded-2xl border border-white/10 bg-white/2.5 p-4">

@@ -8,7 +8,6 @@ function Hero() {
       dir="rtl"
       className="relative min-h-screen overflow-hidden bg-[#0B0F19] pt-20"
     >
-      {/* Background Glow */}
       <div className="pointer-events-none absolute -left-40 top-1/4 h-80 w-80 rounded-full bg-[#4E54C8]/20 blur-[120px]" />
 
       <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#8F94FB]/15 blur-[140px]" />
@@ -23,7 +22,6 @@ function Hero() {
           transition={{ duration: 0.7 }}
           className="order-2 text-center lg:order-1 lg:text-right"
         >
-          {/* Eyebrow */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#F59E0B]/20 bg-[#F59E0B]/10 px-4 py-2">
             <Sparkles size={14} className="text-[#F59E0B]" strokeWidth={2} />
 
@@ -32,7 +30,6 @@ function Hero() {
             </span>
           </div>
 
-          {/* Heading */}
           <h1 className="mx-auto max-w-2xl text-4xl font-extrabold leading-[1.18] tracking-tight sm:text-5xl lg:mx-0 lg:text-6xl xl:text-7xl">
             خطوتك
             <br />
@@ -46,7 +43,6 @@ function Hero() {
             اختار الـ pair اللي يعبر عنك.
           </p>
 
-          {/* CTA */}
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
             <a
               href="#products"
@@ -67,7 +63,6 @@ function Hero() {
             </a>
           </div>
 
-          {/* Trust Points */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 lg:justify-start">
             <div className="flex items-center gap-2.5">
               <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/4">
@@ -101,7 +96,6 @@ function Hero() {
           </div>
         </motion.div>
 
-        {/* Hero Visual */}
         <motion.div
           initial={{ opacity: 0, scale: 0.92, x: 20 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -112,10 +106,8 @@ function Hero() {
           }}
           className="order-1 relative flex min-h-95 items-center justify-center lg:order-2 lg:min-h-162.5"
         >
-          {/* Glow */}
           <div className="absolute h-64 w-64 rounded-full bg-[#4E54C8]/30 blur-[100px] sm:h-80 sm:w-80 lg:h-105 lg:w-105" />
 
-          {/* Decorative Ring */}
           <motion.div
             animate={{ rotate: 360 }}
             transition={{
@@ -126,7 +118,6 @@ function Hero() {
             className="absolute h-72.5 w-72.5 rounded-full border border-dashed border-white/10 sm:h-95 sm:w-95 lg:h-130 lg:w-130"
           />
 
-          {/* Image */}
           <div className="relative z-10 w-full max-w-107.5 sm:max-w-120 lg:max-w-130">
             <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-white/3 shadow-2xl shadow-black/40">
               <img
@@ -137,7 +128,6 @@ function Hero() {
 
               <div className="absolute inset-0 bg-linear-to-t from-[#0B0F19]/90 via-transparent to-transparent" />
 
-              {/* Image Label */}
               <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-2xl border border-white/10 bg-[#0B0F19]/70 p-4 backdrop-blur-xl">
                 <div>
                   <p
@@ -163,7 +153,6 @@ function Hero() {
               </div>
             </div>
 
-            {/* Floating Badge */}
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{
@@ -186,7 +175,6 @@ function Hero() {
         </motion.div>
       </div>
 
-      {/* Bottom Fade */}
       <div className="pointer-events-none absolute bottom-0 left-0 h-32 w-full bg-linear-to-t from-[#0B0F19] to-transparent" />
     </section>
   );

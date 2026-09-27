@@ -46,15 +46,12 @@ function Footer() {
       dir="rtl"
       className="relative overflow-hidden border-t border-white/10 bg-[#070A12] px-5 pb-6 pt-16 sm:px-8 lg:px-10 lg:pt-20"
     >
-      {/* Background Glow */}
       <div className="absolute -left-40 top-0 h-80 w-80 rounded-full bg-[#4E54C8]/10 blur-[130px]" />
 
       <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#8F94FB]/10 blur-[140px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        {/* Main Footer */}
         <div className="grid gap-12 border-b border-white/10 pb-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
-          {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +88,6 @@ function Footer() {
             </a>
           </motion.div>
 
-          {/* Navigation */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -116,7 +112,6 @@ function Footer() {
             </ul>
           </motion.div>
 
-          {/* Locations */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -152,7 +147,6 @@ function Footer() {
             </div>
           </motion.div>
 
-          {/* CTA */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -191,7 +185,6 @@ function Footer() {
           </motion.div>
         </div>
 
-        {/* Bottom Footer */}
         <div className="flex flex-col items-center justify-between gap-4 pt-6 text-center sm:flex-row sm:text-right">
           <p className="text-[11px] text-slate-600">
             © {new Date().getFullYear()} STARK. جميع الحقوق محفوظة.

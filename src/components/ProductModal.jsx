@@ -71,7 +71,6 @@ ${product.name}
             onClick={(event) => event.stopPropagation()}
             className="relative max-h-[92vh] w-full max-w-4xl overflow-y-auto rounded-t-4xl border border-white/10 bg-[#0B0F19] shadow-2xl sm:rounded-4xl"
           >
-            {/* Close */}
             <button
               type="button"
               onClick={onClose}
@@ -82,7 +81,6 @@ ${product.name}
             </button>
 
             <div className="grid lg:grid-cols-2">
-              {/* Image */}
               <div className="relative aspect-square overflow-hidden bg-[#111827] lg:aspect-auto lg:min-h-137.5">
                 <img
                   src={product.image}
@@ -97,7 +95,6 @@ ${product.name}
                 </div>
               </div>
 
-              {/* Details */}
               <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
                 <p className="text-xs font-medium uppercase tracking-widest text-slate-500">
                   {product.category}
@@ -107,7 +104,6 @@ ${product.name}
                   {product.name}
                 </h2>
 
-                {/* Price */}
                 <div className="mt-5 flex flex-wrap items-center gap-3">
                   <span className="text-2xl font-bold text-white">
                     {product.price.toLocaleString()} EGP
@@ -124,7 +120,6 @@ ${product.name}
 
                 <div className="my-7 h-px bg-white/10" />
 
-                {/* Size */}
                 <div>
                   <div className="mb-3 flex items-center justify-between">
                     <p className="text-sm font-semibold text-white">
@@ -152,7 +147,6 @@ ${product.name}
                   </div>
                 </div>
 
-                {/* Actions */}
                 <div className="mt-8 space-y-3">
                   <button
                     type="button"

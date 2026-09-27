@@ -27,13 +27,11 @@ function Locations() {
       dir="rtl"
       className="relative overflow-hidden bg-[#0B0F19] px-5 py-20 sm:px-8 lg:px-10 lg:py-28"
     >
-      {/* Background Glow */}
       <div className="absolute -left-40 top-1/3 h-80 w-80 rounded-full bg-[#4E54C8]/10 blur-[130px]" />
 
       <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#8F94FB]/10 blur-[140px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +62,6 @@ function Locations() {
           </p>
         </motion.div>
 
-        {/* Locations */}
         <div className="grid gap-5 md:grid-cols-2">
           {locations.map((location, index) => (
             <motion.article
@@ -78,11 +75,9 @@ function Locations() {
               }}
               className="group relative overflow-hidden rounded-4xl border border-white/10 bg-white/2.5 p-6 transition duration-500 hover:-translate-y-1 hover:border-[#4E54C8]/40 hover:bg-white/4 sm:p-8"
             >
-              {/* Glow */}
               <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[#4E54C8]/10 blur-[70px] transition duration-500 group-hover:bg-[#8F94FB]/20" />
 
               <div className="relative z-10">
-                {/* Top */}
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center gap-4">
                     <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-[#8F94FB]/10 bg-linear-to-br from-[#4E54C8]/20 to-[#8F94FB]/5 text-[#8F94FB]">
@@ -108,7 +103,6 @@ function Locations() {
                   </span>
                 </div>
 
-                {/* Location Info */}
                 <div className="mt-8 rounded-2xl border border-white/10 bg-black/20 p-5">
                   <div className="flex items-start gap-3">
                     <Navigation
@@ -128,7 +122,6 @@ function Locations() {
                   </div>
                 </div>
 
-                {/* Map Button */}
                 <a
                   href={location.mapUrl}
                   target="_blank"
@@ -150,7 +143,6 @@ function Locations() {
           ))}
         </div>
 
-        {/* Bottom Message */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
